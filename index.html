@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nauman's Portfolio</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: #0c0c41;
+        color: white;
+      }
+
+      .navbar {
+        background-color: #111169;
+      }
+
+      .navbar-brand {
+        font-weight: 600;
+        color: white;
+      }
+
+      .navbar-nav .nav-link {
+        color: white;
+      }
+
+      .navbar-nav .nav-link:hover {
+        color: rgb(175, 175, 226);
+        font-size: 1.1rem;
+      }
+
+      .section {
+        padding: 60px 0;
+      }
+
+      .section-title {
+        font-size: 2rem;
+        margin-bottom: 2px;
+      }
+
+      .purple {
+        color: #8a38d7;
+      }
+
+      a {
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      .download-resume {
+        background-color: #4d4dca;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        font-size: 18px;
+        text-decoration: none;
+        margin-top: 20px;
+        transition: none;
+      }
+
+      .download {
+        margin-top: 40px;
+      }
+
+      .download-resume:hover {
+        background-color: #4d4dca;
+        color: white;
+        text-decoration: none;
+      }
+
+      .work-experience-item {
+        margin-bottom: 40px;
+      }
+
+      .work-experience-item img {
+        max-width: 100%;
+      }
+
+      .work-experience-title {
+        font-size: 1.5rem;
+        color: black;
+      }
+
+      .contact-tile {
+        background-color: #d79797;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        width: 100%;
+        max-width: 300px;
+      }
+
+      /* .footer {
+        background-color: #63599a;
+        color: white;
+        padding: 40px 0;
+      }
+
+      .footer-rights {
+        text-align: center;
+        color: #999;
+        margin-top: 20px;
+      } */
+
+      .footer-first {
+            font-size: 20px;
+        }
+
+        .footer {
+            background-color: rgb(99, 89, 154);
+
+
+        }
+
+        .footer-four ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+
+        .footer-four {
+            margin-left: 40px;
+
+
+        }
+
+        .footer {
+            display: flex;
+            padding: 23px 12px;
+            justify-content: space-around;
+
+
+
+        }
+
+        .footer ul {
+            list-style: none;
+
+        }
+
+        .footer>div {
+            width: 223px;
+        }
+
+        footer .footer-rights {
+            text-align: center;
+            color: gray;
+            padding: 12px;
+        }
+      .container1 {
+        width: 100%;
+        padding: 35px 10%;
+      }
+      .container1 {
+        padding-right: calc(10% - 30px);
+      }
+      main.row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 20px;
+      }
+
+      .col header.title {
+        font-family: helvetica;
+        color: #11a372;
+        padding: 0px 0px 20px 30px;
+      }
+      .col .contents {
+        padding: 0px 30px;
+        border-left: 2px solid #bababa;
+      }
+      .col .contents .box {
+        position: relative;
+        padding: 20px;
+        border: 1px solid #eaeaea;
+        background-color: #ffffff;
+        cursor: pointer;
+        transition: all 0.4s;
+        margin-bottom: 20px;
+      }
+      .col .contents .box:hover {
+        box-shadow: 0px 3px 12px 0px #ccc;
+        border: 1px solid transparent;
+      }
+      .col .contents .box::before {
+        content: "";
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        right: calc(100% + 22px);
+        top: 0;
+        background-color: #11a372;
+        border: 2px solid white;
+      }
+      .box h4 {
+        position: relative;
+        color: #11a372;
+      }
+      .box h3 {
+        font-size: 19px;
+        padding: 10px 0px 6px;
+        font-family: helvetica;
+        font-weight: bold;
+        color: #444;
+      }
+      .box p {
+        line-height: 1.2;
+        color: #555;
+        font-size: 17px;
+      }
+      .me{
+        height: 60px;
+        width: 60px;
+      }
+      hr {
+            border: 0;
+            background: rgb(219, 214, 222);
+            height: 1px;
+            width: 80vw;
+        }
+
+      @media (max-width: 768px) {
+        .navbar-nav {
+          margin-left: auto;
+        }
+
+        .footer-links {
+          display: none;
+        }
+
+        main.row {
+          grid-template-columns: 1fr;
+        }
+        .row .col:nth-child(2) {
+          margin-top: 30px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-dark"
+      style="background-color: rgb(17, 17, 105); height: auto"
+    >
+      <div class="container">
+        <a class="navbar-brand mr-auto" href="#">
+          <img class="me"
+            src="images/Nauman photo prf_page-0001.jpg"
+            alt="Nauman's Portfolio"
+                      />
+          Nauman's Portfolio
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="p.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="c.html">Contact Me</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h1 class="section-title">
+              Hi, My Name is <br /><span class="purple">Nauman</span>
+            </h1>
+            <h2>
+              I am a passionate <br /><span class="purple" id="element"></span>
+            </h2>
+            <div class="download">
+              <a href="/pdf/updated resume new.pdf" class="download-resume"
+                >Download Resume</a
+              >
+            </div>
+          </div>
+          <div class="col-md-6">
+            <img
+              src="images/Email-06.webp"
+              class="img-fluid mt-5"
+              alt="Nauman's Email"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="container1">
+        <hr>
+        <main class="row">
+                <section class="col">
+          <header class="title">
+            <h2>EDUCATION</h2>
+          </header>
+
+          <div class="contents">
+            <div class="box">
+              <h4>2017 - 2018</h4>
+              <h3>SSLC</h3>
+              <p>
+                Accomplished a score of 80.80% in SSLC from Shaheen Talent High School, Bidar in 2018.
+              </p>
+            </div>
+
+            <div class="box">
+              <h4>2018 - 2020</h4>
+              <h3>Pre – University Course – Science</h3>
+              <p>
+                
+Successfully completed the Pre-University Course in Science with a score of 81% from Shaheen Independent PU College, Bidar in 2020.
+              </p>
+            </div>
+
+            <div class="box">
+              <h4>2020 - 2024</h4>
+              <h3>Bachelor of Engineering – Computer Science and Engineering </h3>
+              <p>
+                Currently pursuing a Bachelor of Engineering in Computer Science and Engineering at CMR Institute of Technology, Bangalore, with a CGPA of 7.5 as of 2024.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="col">
+          <header class="title">
+            <h2>EXPERIENCE</h2>
+          </header>
+
+          <div class="contents">
+            <div class="box">
+              <h4>June 2023 - July 2023</h4>
+              <h3>Frontend Development Intern</h3>
+              <p>
+                Completed an internship as a FrontEnd Web Development intern through the IBM Skillsbuild program by Edunet Foundation. Successfully developed a website clone for the Karnataka Examination Authority using HTML and CSS.
+              </p>
+            </div>
+
+            <div class="box">
+              <h4>February 2024 - March 2024</h4>
+              <h3>Web Development Intern</h3>
+              <p>
+                Completed an internship as a Web Development intern with Navodita Infotech Company. Successfully developed my personal portfolio website using HTML , CSS and JavaScript.
+              </p>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Nauman's Portfolio</h3>
+            </div>
+
+            <div class="footer-four">
+
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="p.html">Projects</a></li>
+                    <li><a href="c.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-rights">
+            Copyright &#169; Naumansportfolio.com | All rights reserved
+        </div>
+    </footer>
+    <!-- <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <p class="footer-rights">
+              Copyright &copy; Naumansportfolio.com | All rights reserved
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer> -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Web Designer", "Web Developer."],
+        typeSpeed: 50,
+        loop: true,
+      });
+    </script>
+  </body>
+</html>

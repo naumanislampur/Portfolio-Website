@@ -1,0 +1,81 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Details</title>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <style>
+        .background-image {
+            background-image: url(images/contact.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .info ul li {
+            list-style: none;
+            margin: 10px 0;
+            text-decoration: none;
+            color: black;
+        }
+        
+        .info ul {
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 2rem;
+            margin: 20px;
+        }
+        
+        .name,
+        .insta,
+        .email,
+        .linkedin,
+        .phone,
+        .address {
+            height: 18px;
+            width: 18px;
+        }
+        
+        @media screen and (max-width: 768px) {
+            .info ul {
+                margin-left: 0;
+                text-align: center;
+            }
+            h1 {
+                margin-left: 0;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="background-image">
+        <h1>Contact Information</h1>
+        <div class="info">
+            <ul>
+                <li><img class="name" src="images/name.png" alt="Name">&nbsp;&nbsp;NAUMAN N ISLAMPUR</li>
+                <li><img class="email" src="images/email.png" alt="Email-ID">&nbsp;&nbsp;<a href="#">naumanislampur318211@gmail.com</a></li>
+                <li><img class="phone" src="images/phone.png" alt="Contact Number">&nbsp;&nbsp;+91 7406451289</li>
+                <li><img class="insta" src="images/insta.png" alt="Instagram">&nbsp;&nbsp;<a href="https://www.instagram.com/naumanrockstar/">naumanrockstar</a></li>
+                <li><img class="linkedin" src="images/linkedin.png" alt="LinkedIn Profile">&nbsp;&nbsp;<a href="https://www.linkedin.com/in/nauman-n-islampur-88737b26b">Nauman N Islampur</a></li>
+                <li><img class="address" src="images/address.png" alt="Address">&nbsp;&nbsp;Nandini Layout, Bangalore</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
